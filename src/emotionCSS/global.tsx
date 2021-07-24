@@ -16,10 +16,16 @@ const globalCSS = css`
   body {
     font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
+    color: #6a6768;
+    overflow-x: hidden;
   }
 
   a {
     text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
   }
 
   img {
@@ -30,6 +36,20 @@ const globalCSS = css`
     display: grid;
     grid-template-columns: 20rem 1fr;
     height: 100vh;
+  }
+
+  .centering-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .centering-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media ${device.mobileM} {

@@ -1,3 +1,4 @@
+import styled from "@emotion/styled/macro";
 // px to rem
 export const calcRem = (px: number) => `${px / 16}rem` as const;
 
@@ -92,6 +93,22 @@ export const typography = {
     fontSize: "0.875rem",
   },
 } as const;
+
+export const DefaultBtn = styled.button`
+  background: transparent;
+  border: none;
+
+  & > a {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: #b61428;
+    color: white;
+    border-radius: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+`;
 
 export const theme = {
   colors,
