@@ -97,6 +97,8 @@ export const typography = {
 export const DefaultBtn = styled.button`
   background: transparent;
   border: none;
+  opacity: 0;
+  animation: 0.5s fade-in-down ease-in 1.5s forwards;
 
   & > a {
     display: inline-block;

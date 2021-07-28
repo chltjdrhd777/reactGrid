@@ -11,6 +11,7 @@ const sidebarCSS = (function () {
       & > span {
         transform: rotate(-90deg);
         background: #48484848;
+        animation: 0.5s fade-in ease-in;
 
         &:nth-of-type(2) {
           width: 2px;

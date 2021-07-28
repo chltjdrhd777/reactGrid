@@ -26,10 +26,14 @@ const mainCSS = (function () {
             font-weight: 400;
             margin-bottom: 3rem;
             color: black;
+            opacity: 0;
+            animation: 0.5s fade-in-down ease-in 0.5s forwards;
           }
 
           > .item-description {
             margin-bottom: 4rem;
+            opacity: 0;
+            animation: 0.5s fade-in-down ease-in 1s forwards;
           }
         }
 
@@ -37,12 +41,17 @@ const mainCSS = (function () {
           position: relative;
 
           & > .bottle {
+            opacity: 0;
+            animation: 0.5s fade-in ease-in 3.5s forwards;
           }
 
           & > .rose {
             position: absolute;
             bottom: -3rem;
             left: -15rem;
+            z-index: -1;
+            opacity: 0;
+            animation: 0.5s fade-in ease-in 3s forwards;
           }
 
           //after은 기본이 화면밖에 있는걸로 보임
@@ -57,6 +66,8 @@ const mainCSS = (function () {
             top: 50%;
             right: 0;
             transform: translate(29rem, -50%);
+            opacity: 0;
+            animation: 0.5s fase-in-left ease-in 2s forwards;
             z-index: -2;
           }
         }

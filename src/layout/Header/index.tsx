@@ -10,7 +10,7 @@ const headerCSS = (function () {
       grid-row: span 1;
       display: flex;
       align-items: center;
-
+      animation: 0.5s fade-in ease-in;
       & > .container {
         width: 100%;
         max-width: 120rem;

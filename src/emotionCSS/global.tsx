@@ -52,10 +52,42 @@ const globalCSS = css`
     justify-content: center;
   }
 
+  //? media
   @media ${device.mobileM} {
   }
 
   @media ${device.mobileL} {
+  }
+
+  //? keyframes
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-2.5rem);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fase-in-left {
+    from {
+      transform: translate(100rem, -50%);
+    }
+    to {
+      opacity: 1;
+      transform: tanslate(29rem, -50%);
+    }
   }
 `;
 
